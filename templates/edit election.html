@@ -1,0 +1,32 @@
+{% extends "home index.html" %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/adm_edit_election_pst">
+  <table width="96%" height="286" border="0">
+    <tr>
+      <td width="27%"><div align="center">Election Name</div></td>
+      <td width="73%"><label for="textfield"></label>
+      <input type="text" name="textfield" id="textfield" value="{{ data['election_name'] }}" required="" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td><div align="center">Election Date</div></td>
+      <td><label for="textfield2"></label>
+      <input type="date" name="textfield2" id="textfield2" value="{{ data['election_date'] }}" required="" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td><p align="center">Nomination Date</p></td>
+      <td><label for="textfield3"></label>
+      <input type="date" name="textfield3" id="textfield3" value="{{ data['nomination_date'] }}" required="" class="form-control"/></td>
+    </tr>
+    <tr>
+      <td><div align="center">Result Date</div></td>
+      <td><label for="textfield4"></label>
+      <input name="textfield4" type="date"  id="textfield4" value="{{ data['result_date'] }}" required="" class="form-control"/></td>
+    </tr>
+    <tr>
+        <td></td><td>
+        <input type="submit" name="button" id="button" value="Update" class="btn btn-success" align="center"/>
+      </td>
+    </tr>
+  </table>
+</form>
+{% endblock %}

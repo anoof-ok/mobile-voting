@@ -1,0 +1,78 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccdfdd"
+
+    android:orientation="vertical" >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/art_img"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+
+
+                android:src="@drawable/aaa" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tableRow44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+        </TableRow>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_gravity="center"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+    <TableRow
+        android:id="@+id/tableRow12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="bottom">
+
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="3"
+            android:background="@drawable/btn_rounded"
+            android:text="Next" />
+
+
+    </TableRow>
+</LinearLayout>

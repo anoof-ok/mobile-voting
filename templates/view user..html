@@ -1,0 +1,31 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="">
+  <table class="table table-bordered">
+    <tr>
+      <th scope="col">Sl No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Dob</th>
+      <th scope="col">Phone no</th>
+      <th scope="col">Email</th>
+      <th scope="col">Status</th>
+
+      <th scope="col">&nbsp;</th>
+    </tr>
+      {% for i in data %}
+    <tr>
+      <td> {{ loop.index }}</td>
+      <td> {{ i['name'] }}&nbsp;</td>
+      <td> {{ i['gender'] }}</td>
+      <td>&nbsp;{{ i['dob'] }}</td>
+      <td>&nbsp;{{ i['phone_number'] }}</td>
+      <td>{{ i['email'] }}</td>
+        <td>{{ i['status'] }}</td>
+      <td><div align="center"><a class="btn btn-info" href="/view_user_more/{{ i['login_id'] }}">click to more details</a></div></td>
+
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{%  endblock %}

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".New_reg">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            tools:context=".user_registration">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_launcher_background"
+                     />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_voter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="number"
+                    android:hint="Voterid" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPersonName"
+                    android:hint="Name" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:hint="date of birth"
+                    android:inputType="textPersonName" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+                </RadioGroup>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_place"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="place" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_phone"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="phone"
+                    android:inputType="number" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+                <EditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="email" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+                <EditText
+                    android:id="@+id/ed_hs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPersonName"
+                    android:hint="House" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/ed_hn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPersonName"
+                    android:hint="House Number" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:gravity="center">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/ed_post"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="post" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/ed_pin"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="Pin" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/ed_district"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPersonName"
+                    android:hint="District" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/ed_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPersonName"
+                    android:hint="state" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:text="Constiuency" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content" />
+
+
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:inputType="textPassword"
+                    android:hint="password" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="78dp"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/button53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_rounded"
+                    android:text="signup" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

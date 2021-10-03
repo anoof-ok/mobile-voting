@@ -1,0 +1,24 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="">
+  <table width="91%" height="222" border="0">
+    <tr>
+      <th width="8%" height="51" scope="col">Sl No</th>
+      <th width="28%" scope="col">Candidate Name</th>
+      <th width="9%" scope="col">Party</th>
+      <th width="12%" scope="col">Symbol</th>
+      <th width="22%" scope="col">Constituency</th>
+      <th colspan="2" scope="col">Action</th>
+    </tr>
+      {% for i in data %}
+    <tr><td>{{ loop.index }}</td>
+      <td>{{ i['login_id'] }}</td>
+      <td>{{ i['date'] }}</td>
+
+      <td width="10%"><div align="center"><a href="#">Approve</a></div></td>
+      <td width="11%"><div align="center"><a href="#">Reject</a></div></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

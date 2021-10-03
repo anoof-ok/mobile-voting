@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_elect"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Election" />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Result" />
+        <item
+            android:id="@+id/nav_cmp_add"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Complaint" />
+        <item
+            android:id="@+id/nav_reply"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Reply" />
+        <item
+            android:id="@+id/nav_req"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Request For Candidate" />
+        <item
+            android:id="@+id/nav_lg"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>

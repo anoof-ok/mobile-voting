@@ -1,0 +1,34 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="">
+  <table class="table table-bordered">
+    <tr>
+      <th scope="col">SL No</th>
+      <th scope="col">User Name</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Place</th>
+      <th scope="col">Date/Time</th>
+      <th scope="col">Complaint</th>
+      <th scope="col">&nbsp;</th>
+    </tr>
+
+      {% for i in data %}
+    <tr>
+
+
+        <td>{{ loop.index }} </td>
+      <td> {{ i['name'] }}</td>
+      <td> {{ i['phone_number'] }}</td>
+      <td> {{ i['place'] }}</td>
+      <td> {{ i['complaint_date'] }}</td>
+        <td> {{ i['complaint'] }}</td>
+        {% if i['reply']=='pending' %}
+      <td><a  class="btn btn-info" href="/adm_comp_rply/{{ i['complaint_id']}}">click to reply</a></td>
+    {% else %}
+    <td> {{ i['reply'] }}</td>
+    {% endif %}
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

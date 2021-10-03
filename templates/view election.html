@@ -1,0 +1,29 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="">
+  <table class="table table-bordered">
+    <tr>
+      <th>Sl No</th>
+      <th>Election Name</th>
+      <th>Election Date</th>
+      <th>Nomination Date</th>
+      <th >Result Date</th>
+      <th>Status</th>
+      <th colspan="2" scope="col" >Action</th>
+    </tr>
+         {% for i in data %}
+    <tr>
+      <td>{{ loop.index }}</td>
+      <td>{{ i['election_name'] }}</td>
+      <td>{{ i['election_date'] }}</td>
+      <td>{{ i['nomination_date'] }}&nbsp;</td>
+      <td>{{ i['result_date'] }}&nbsp;</td>
+        <td>{{ i['election_status'] }}</td>
+       <td ><div align="center"><a class="btn btn-success"  href="/adm_edit_election/{{ i["election_id"] }}">Edit</a></div></td>
+       <td ><div align="left"><a class="btn btn-danger" href="/adm_delete_election/{{ i["election_id"] }}">Delete</a><br>
+           <a href="/adm_view_election_res_pub/{{ i['election_id'] }}/{{ i['result_date'] }}">result publish</a> </div></td>
+    </tr>
+      {% endfor %}
+  </table>
+</form>
+{% endblock %}

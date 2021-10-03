@@ -1,0 +1,15 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="/adm_add_constitency_pst">
+
+    <table class="table">
+      <tr>
+        <td>Constituency Name</td>
+        <td>
+        <input type="text" name="textfield" id="textfield" required="" class="form-control"/></td>
+          <td><input type="submit" name="button" id="button" value="Add"  class="btn btn-success"/></td>
+      </tr>
+    </table>
+</form>
+{%  endblock %}
+

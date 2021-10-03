@@ -1,0 +1,67 @@
+{% extends "home index.html" %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="/verify_approve_reject">
+  <table class="table">
+      <tr><td><img src="{{ data['photo'] }}"width="100" height="100"></td>
+      <tr>
+    <td>
+      <tr>
+        <td>Name</td>
+        <td width="55%">{{ data['name'] }}&nbsp;</td>
+        </tr>
+      <tr>
+        <td>Gender</td>
+        <td>{{ data['gender'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td>{{ data['dob'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Phone No</td>
+        <td>{{ data['phone_number'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>E-mail</td>
+        <td>{{ data['email'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>House No</td>
+        <td>{{ data['house_no'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>House Name</td>
+        <td>{{ data['house_name'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Place</></td>
+        <td>{{ data['place'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Post</td>
+        <td>{{ data['post'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Pin code</td>
+        <td>{{ data['pin'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>District</td>
+        <td>{{ data['district'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>{{ data['state'] }}&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2"><div align="center">
+          <input type="submit" name="button" id="button" value="Approve" class="btn btn-success" />
+          <input type="submit" name="button" id="button" value="Reject" class="btn btn-danger"/>
+        </div></td>
+      </tr>
+    </table>
+      <label for="textfield"></label></td>
+  </tr>
+  </table>
+</form>
+{% endblock %}

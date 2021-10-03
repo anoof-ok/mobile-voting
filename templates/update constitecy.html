@@ -1,0 +1,20 @@
+{% extends "home index.html" %}
+{%  block body %}
+<form id="form1" name="form1" method="post" action="/adm_update_constitency_pst">
+  <div align="center">
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <table width="60%" height="110" border="0">
+      <tr>
+        <td>Constituency Name</td>
+        <td>
+            <input type="text" value="{{ data['constituency_name'] }}" name="textfield" id="textfield" required="" class="form-control"/>
+        </td>
+        <td><input type="submit" name="button" id="button" value="Update"  align="right" class="btn btn-success"/>
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>
+{% endblock %}

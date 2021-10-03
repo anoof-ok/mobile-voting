@@ -1,0 +1,22 @@
+{% extends "home index.html" %}
+{% block body %}
+<form id="form1" name="form1" method="post" action="">
+  <table class="table table-bordered">
+    <tr>
+      <th width="14%" scope="col">Sl No.</th>
+      <th width="49%" scope="col">Constituency Name</th>
+      <th colspan="2" scope="col">Action</th>
+    </tr>
+
+      {% for i in data %}
+    <tr>
+      <td>&nbsp;{{ loop.index }}</td>
+      <td>{{ i['constituency_name'] }}</td>
+      <td width="18%"><div align="center"><a class="btn btn-success" href="/adm_edit_constituency/{{ i["constituent_id"] }}">Edit</a></div></td>
+      <td width="19%"><div align="center"><a class="btn btn-danger" href="/adm_delete_constitency/{{ i["constituent_id"] }}">Delete</a></div></td>
+    </tr>
+      {% endfor %}
+
+  </table>
+</form>
+{% endblock %}
